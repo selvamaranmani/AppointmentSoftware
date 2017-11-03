@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <!--<img ion-right src="assets/imgs/als.png" class="navbarLogo" /> -->
+    <ion-title style="text-align:center">New Appointment</ion-title>
+
+    <h2 style="color:red;">Hi {{userDetails.name}}</h2>
+    <!-- <h2 style="color:red;">{{userDetails.email}}</h2>  -->
+
+    <button ion-button color="yellow" (click)="logout()" style="float:right; height:100%; font-size:75%">Logout</button>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Check Box for Same as Registered</ion-label>
+    <ion-checkbox color="green" checked="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Name</ion-label>
+    <ion-input type="text" value="{{userDetails.name}}"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Date of Birth</ion-label>
+    <ion-input type="text" value="{{userDetails.dob}}"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Gender</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="Male">Male</ion-option>
+      <ion-option value="Female">Female</ion-option>
+      <ion-option value="Others">Others</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Specialization</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Doctor</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Date</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Time</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ></ion-datetime>
+  </ion-item>
+  <br>
+  <ion-list>
+    <button ion-button full color="success">Submit</button>
+  </ion-list>
+</ion-content>

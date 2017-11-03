@@ -1,0 +1,66 @@
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Name</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Phone Number</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.phone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Email</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>D.O.B</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.dob"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Gender</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.gender"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Address Line1</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.addl"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Address Line2</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.addll"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Village</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.village"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>District</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.district"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>City</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.city"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Pincode</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.pincode"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>State</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.state"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Username</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="userData.username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input type="password" value="" [(ngModel)]="userData.password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Confirm Password</ion-label>
+      <ion-input type="password" value="" [(ngModel)]="userData.confirmpassword"></ion-input>
+    </ion-item>
+    <button ion-button full color="success" (click)="signup()">Signup</button>
+    <a href="#" (click)="login()">Login Page</a>
+  </ion-list>
+</ion-content>
